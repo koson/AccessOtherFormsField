@@ -15,7 +15,6 @@ namespace AccessOtherFormsField
         public Form2()          // ไม่ใช้ default constructor 
         {
             InitializeComponent();
-            textBox1.Text = f1.TextBox1;
         }
 
         public Form2(Form1 f1)  // ใช้ constructor ที่รับ reference ของ Form1
