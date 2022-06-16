@@ -16,7 +16,7 @@ namespace AccessOtherFormsField
         {
             InitializeComponent();
         }
-        public string TextBox1  // สร้าง property เพื่อเข้าถึง textBox1 ซึ่งเป็น private
+        public string TextBox1  // สร้าง property เพื่อเข้าถึง Text ของ textBox1 (ซึ่งเป็น private)
         {
             get { return textBox1.Text; }
             set { textBox1.Text = value; } 
