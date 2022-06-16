@@ -16,16 +16,17 @@ namespace AccessOtherFormsField
         {
             InitializeComponent();
         }
-        public string TextBox1 {
+        public string TextBox1  // สร้าง property เพื่อเข้าถึง textBox1 ซึ่งเป็น private
+        {
             get { return textBox1.Text; }
             set { textBox1.Text = value; } 
         }
 
         private void buttonOpenForm2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = this;
-            Form2 f2 = new Form2(f1);
-            f2.Show();
+            Form1 f1 = this;            // เตรียม reference ของ Form1 ที่กำลังแสเดงอยู่ในขณะนี้
+            Form2 f2 = new Form2(f1);   // ส่ง reference ของ form1 ไปให้ Form2 
+            f2.Show();                  // แสดง Form2 
         }
     }
 }
